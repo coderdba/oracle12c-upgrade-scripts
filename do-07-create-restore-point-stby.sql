@@ -1,0 +1,10 @@
+spool do-07-create-restore-point
+
+startup mount;
+CREATE RESTORE POINT before_upgrade_to_12102 GUARANTEE FLASHBACK DATABASE;
+
+select NAME,SCN,TIME,GUARANTEE_FLASHBACK_DATABASE,STORAGE_SIZE from V$RESTORE_POINT;
+
+SHUTDOWN IMMEDIATE;
+
+spool off

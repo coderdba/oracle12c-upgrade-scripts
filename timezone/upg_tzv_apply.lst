@@ -1,0 +1,88 @@
+SQL> @ upg_tzv_apply
+INFO: If an ERROR occurs the script will EXIT sqlplus.                          
+INFO: The database RDBMS DST version will be updated to DSTv18 .                
+WARNING: This script will restart the database 2 times                          
+WARNING: WITHOUT asking ANY confirmation.                                       
+WARNING: Hit control-c NOW if this is not intended.                             
+INFO: Restarting the database in UPGRADE mode to start the DST upgrade.         
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+ORA-32004: obsolete or deprecated parameter(s) specified for RDBMS instance
+ORACLE instance started.
+
+Total System Global Area 4294967296 bytes                                       
+Fixed Size                  5291928 bytes                                       
+Variable Size            2432696424 bytes                                       
+Database Buffers         1845493760 bytes                                       
+Redo Buffers               11485184 bytes                                       
+Database mounted.
+Database opened.
+ALTER pluggable DATABASE CLOSE immediate
+*
+ERROR at line 1:
+ORA-65090: operation only allowed in a container database 
+
+
+ALTER pluggable DATABASE OPEN upgrade
+*
+ERROR at line 1:
+ORA-65090: operation only allowed in a container database 
+
+
+INFO: Starting the RDBMS DST upgrade.                                           
+INFO: Upgrading all SYS owned TSTZ data.                                        
+INFO: It might take time before any further output is seen ...                  
+An upgrade window has been successfully started.                                
+INFO: Restarting the database in NORMAL mode to upgrade non-SYS TSTZ data.      
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+ORA-32004: obsolete or deprecated parameter(s) specified for RDBMS instance
+ORACLE instance started.
+
+Total System Global Area 4294967296 bytes                                       
+Fixed Size                  5291928 bytes                                       
+Variable Size            2432696424 bytes                                       
+Database Buffers         1845493760 bytes                                       
+Redo Buffers               11485184 bytes                                       
+Database mounted.
+Database opened.
+INFO: Upgrading all non-SYS TSTZ data.                                          
+INFO: It might take time before any further output is seen ...                  
+INFO: Do NOT start any application yet that uses TSTZ data!                     
+INFO: Next is a list of all upgraded tables:                                    
+Table list: "GSMADMIN_INTERNAL"."AQ$_CHANGE_LOG_QUEUE_TABLE_S"                  
+Number of failures: 0                                                           
+Table list: "GSMADMIN_INTERNAL"."AQ$_CHANGE_LOG_QUEUE_TABLE_L"                  
+Number of failures: 0                                                           
+Table list: "APEX_040200"."WWV_FLOW_WORKSHEET_NOTIFY"                           
+Number of failures: 0                                                           
+Table list: "APEX_040200"."WWV_FLOW_FEEDBACK_FOLLOWUP"                          
+Number of failures: 0                                                           
+Table list: "APEX_040200"."WWV_FLOW_FEEDBACK"                                   
+Number of failures: 0                                                           
+Table list: "APEX_040200"."WWV_FLOW_DEBUG_MESSAGES2"                            
+Number of failures: 0                                                           
+Table list: "APEX_040200"."WWV_FLOW_DEBUG_MESSAGES"                             
+Number of failures: 0                                                           
+INFO: Total failures during update of TSTZ data: 0 .                            
+An upgrade window has been successfully ended.                                  
+INFO: Your new Server RDBMS DST version is DSTv18 .                             
+INFO: The RDBMS DST update is successfully finished.                            
+INFO: Make sure to exit this sqlplus session.                                   
+INFO: Do not use it for timezone related selects.                               
+SQL> 
+SQL> alter system set cluster_database=true scope=spfile;
+
+System altered.
+
+SQL> shutdown;
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 

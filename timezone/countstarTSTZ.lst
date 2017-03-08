@@ -1,0 +1,111 @@
+SQL> @countstarTSTz
+SP2-0310: unable to open file "countstarTSTz.sql"
+SQL> @countstarTSTZ.sql
+.                                                                               
+Estimating amount of TSTZ data using count(*).                                  
+This might take some time....                                                   
+.                                                                               
+For SYS tables first...                                                         
+Note: empty tables are not listed.                                              
+Owner.Tablename.Columnname - count star of that column                          
+SYS.AQ$_ALERT_QT_S.CREATION_TIME - 4                                            
+SYS.AQ$_ALERT_QT_S.DELETION_TIME - 4                                            
+SYS.AQ$_ALERT_QT_S.MODIFICATION_TIME - 4                                        
+SYS.AQ$_AQ$_MEM_MC_S.CREATION_TIME - 3                                          
+SYS.AQ$_AQ$_MEM_MC_S.DELETION_TIME - 3                                          
+SYS.AQ$_AQ$_MEM_MC_S.MODIFICATION_TIME - 3                                      
+SYS.AQ$_AQ_PROP_TABLE_S.CREATION_TIME - 1                                       
+SYS.AQ$_AQ_PROP_TABLE_S.DELETION_TIME - 1                                       
+SYS.AQ$_AQ_PROP_TABLE_S.MODIFICATION_TIME - 1                                   
+SYS.AQ$_KUPC$DATAPUMP_QUETAB_S.CREATION_TIME - 1                                
+SYS.AQ$_KUPC$DATAPUMP_QUETAB_S.DELETION_TIME - 1                                
+SYS.AQ$_KUPC$DATAPUMP_QUETAB_S.MODIFICATION_TIME - 1                            
+SYS.AQ$_SCHEDULER$_EVENT_QTAB_S.CREATION_TIME - 3                               
+SYS.AQ$_SCHEDULER$_EVENT_QTAB_S.DELETION_TIME - 3                               
+SYS.AQ$_SCHEDULER$_EVENT_QTAB_S.MODIFICATION_TIME - 3                           
+SYS.AQ$_SCHEDULER$_REMDB_JOBQTAB_S.CREATION_TIME - 1                            
+SYS.AQ$_SCHEDULER$_REMDB_JOBQTAB_S.DELETION_TIME - 1                            
+SYS.AQ$_SCHEDULER$_REMDB_JOBQTAB_S.MODIFICATION_TIME - 1                        
+SYS.AQ$_SCHEDULER_FILEWATCHER_QT_S.CREATION_TIME - 1                            
+SYS.AQ$_SCHEDULER_FILEWATCHER_QT_S.DELETION_TIME - 1                            
+SYS.AQ$_SCHEDULER_FILEWATCHER_QT_S.MODIFICATION_TIME - 1                        
+SYS.AQ$_SUBSCRIBER_TABLE.CREATION_TIME - 1                                      
+SYS.AQ$_SUBSCRIBER_TABLE.DELETION_TIME - 1                                      
+SYS.AQ$_SUBSCRIBER_TABLE.MODIFICATION_TIME - 1                                  
+SYS.AQ$_SYS$SERVICE_METRICS_TAB_S.CREATION_TIME - 5                             
+SYS.AQ$_SYS$SERVICE_METRICS_TAB_S.DELETION_TIME - 5                             
+SYS.AQ$_SYS$SERVICE_METRICS_TAB_S.MODIFICATION_TIME - 5                         
+SYS.KET$_AUTOTASK_STATUS.ABA_START_TIME - 1                                     
+SYS.KET$_AUTOTASK_STATUS.ABA_STATE_TIME - 1                                     
+SYS.KET$_AUTOTASK_STATUS.MW_RECORD_TIME - 1                                     
+SYS.KET$_AUTOTASK_STATUS.MW_START_TIME - 1                                      
+SYS.KET$_AUTOTASK_STATUS.RECONCILE_TIME - 1                                     
+SYS.KET$_CLIENT_CONFIG.FIELD_2 - 7                                              
+SYS.KET$_CLIENT_CONFIG.LAST_CHANGE - 7                                          
+SYS.KET$_CLIENT_TASKS.CURR_WIN_START - 3                                        
+SYS.KET$_CLIENT_TASKS.LG_DATE - 3                                               
+SYS.KET$_CLIENT_TASKS.LT_DATE - 3                                               
+SYS.OPTSTAT_HIST_CONTROL$.SPARE6 - 31                                           
+SYS.OPTSTAT_HIST_CONTROL$.SVAL2 - 31                                            
+SYS.RADM_FPTM$.TSWTZ_COL - 1                                                    
+SYS.REG$.NTFN_GROUPING_START_TIME - 1                                           
+SYS.REG$.REG_TIME - 1                                                           
+SYS.SCHEDULER$_EVENT_LOG.LOG_DATE - 187                                         
+SYS.SCHEDULER$_GLOBAL_ATTRIBUTE.ATTR_TSTAMP - 11                                
+SYS.SCHEDULER$_JOB.END_DATE - 27                                                
+SYS.SCHEDULER$_JOB.LAST_ENABLED_TIME - 27                                       
+SYS.SCHEDULER$_JOB.LAST_END_DATE - 27                                           
+SYS.SCHEDULER$_JOB.LAST_START_DATE - 27                                         
+SYS.SCHEDULER$_JOB.NEXT_RUN_DATE - 27                                           
+SYS.SCHEDULER$_JOB.START_DATE - 27                                              
+SYS.SCHEDULER$_JOB_RUN_DETAILS.LOG_DATE - 162                                   
+SYS.SCHEDULER$_JOB_RUN_DETAILS.REQ_START_DATE - 162                             
+SYS.SCHEDULER$_JOB_RUN_DETAILS.START_DATE - 162                                 
+SYS.SCHEDULER$_SCHEDULE.END_DATE - 4                                            
+SYS.SCHEDULER$_SCHEDULE.REFERENCE_DATE - 4                                      
+SYS.SCHEDULER$_WINDOW.ACTUAL_START_DATE - 9                                     
+SYS.SCHEDULER$_WINDOW.END_DATE - 9                                              
+SYS.SCHEDULER$_WINDOW.LAST_START_DATE - 9                                       
+SYS.SCHEDULER$_WINDOW.MANUAL_OPEN_TIME - 9                                      
+SYS.SCHEDULER$_WINDOW.NEXT_START_DATE - 9                                       
+SYS.SCHEDULER$_WINDOW.START_DATE - 9                                            
+SYS.STATS_TARGET$.END_TIME - 1298                                               
+SYS.STATS_TARGET$.START_TIME - 1298                                             
+SYS.WRI$_ALERT_HISTORY.CREATION_TIME - 28                                       
+SYS.WRI$_ALERT_HISTORY.TIME_SUGGESTED - 28                                      
+SYS.WRI$_OPTSTAT_HISTGRM_HISTORY.SAVTIME - 26071                                
+SYS.WRI$_OPTSTAT_HISTGRM_HISTORY.SPARE6 - 26071                                 
+SYS.WRI$_OPTSTAT_HISTHEAD_HISTORY.SAVTIME - 64733                               
+SYS.WRI$_OPTSTAT_HISTHEAD_HISTORY.SPARE6 - 64733                                
+SYS.WRI$_OPTSTAT_IND_HISTORY.SAVTIME - 3369                                     
+SYS.WRI$_OPTSTAT_IND_HISTORY.SPARE6 - 3369                                      
+SYS.WRI$_OPTSTAT_OPR.END_TIME - 108                                             
+SYS.WRI$_OPTSTAT_OPR.SPARE6 - 108                                               
+SYS.WRI$_OPTSTAT_OPR.START_TIME - 108                                           
+SYS.WRI$_OPTSTAT_OPR_TASKS.END_TIME - 6828                                      
+SYS.WRI$_OPTSTAT_OPR_TASKS.SPARE6 - 6828                                        
+SYS.WRI$_OPTSTAT_OPR_TASKS.START_TIME - 6828                                    
+SYS.WRI$_OPTSTAT_TAB_HISTORY.SAVTIME - 4218                                     
+SYS.WRI$_OPTSTAT_TAB_HISTORY.SPARE6 - 4218                                      
+SYS.XS$PRIN.END_DATE - 14                                                       
+SYS.XS$PRIN.START_DATE - 14                                                     
+Total count * of SYS TSTZ columns is : 221331                                   
+There are in total 145 SYS TSTZ columns.                                        
+.                                                                               
+For non-SYS tables ...                                                          
+Note: empty tables are not listed.                                              
+Owner.Tablename.Columnname - count star of that column                          
+GSMADMIN_INTERNAL.AQ$_CHANGE_LOG_QUEUE_TABLE_S.CREATION_TIME - 1                
+GSMADMIN_INTERNAL.AQ$_CHANGE_LOG_QUEUE_TABLE_S.DELETION_TIME - 1                
+GSMADMIN_INTERNAL.AQ$_CHANGE_LOG_QUEUE_TABLE_S.MODIFICATION_TIME - 1            
+WMSYS.AQ$_WM$EVENT_QUEUE_TABLE_S.CREATION_TIME - 1                              
+WMSYS.AQ$_WM$EVENT_QUEUE_TABLE_S.DELETION_TIME - 1                              
+WMSYS.AQ$_WM$EVENT_QUEUE_TABLE_S.MODIFICATION_TIME - 1                          
+WMSYS.WM$WORKSPACES_TABLE$.CREATETIME - 1                                       
+WMSYS.WM$WORKSPACES_TABLE$.LAST_CHANGE - 1                                      
+Total count * of non-SYS TSTZ columns is :  8                                   
+There are in total 22 non-SYS TSTZ columns.                                     
+Total Minutes elapsed : 0                                                       
+SQL> !vi countstatsTSTZ.sql
+
+SQL> spool countstatsTSTZ
